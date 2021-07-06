@@ -18,7 +18,7 @@ const Body = () => {
                 <div className="container">
                     <img src={img1} alt="" />
                     <div className="content-info">
-                        <h1>-Hemos creado una plataforma pensada para la familia Ramo-. </h1>
+                        <h1>Hemos creado una plataforma pensada para la familia Ramo. </h1>
                           
                     </div>
                 </div>

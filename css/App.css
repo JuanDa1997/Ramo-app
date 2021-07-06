@@ -100,6 +100,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.InitSection {
+  background-color: whitesmoke;
+}
 .InitSection .navbar {
   position: fixed;
   width: 100vw;
@@ -141,8 +144,6 @@ html {
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
-  background-color: whitesmoke;
-  height: 190vw;
   flex-direction: column;
 }
 .InitSection .body .containerBody {
@@ -175,11 +176,12 @@ html {
 .InitSection .body .containerBody .container {
   margin-top: 30px;
   width: 60vw;
+  height: 35vh;
   display: flex;
   flex-direction: row;
 }
 .InitSection .body .containerBody .container img {
-  height: 40vh;
+  height: 20vw;
   border-radius: 1vw;
 }
 .InitSection .body .containerBody .container .content-info {
@@ -187,7 +189,6 @@ html {
   display: flex;
   width: 100vw;
   height: 40vh;
-  font-size: 2vw;
   justify-content: flex-end;
   align-items: flex-start;
 }
@@ -199,10 +200,12 @@ html {
   margin-top: 30px;
   width: 60vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 .InitSection .body .containerBody .container2 img {
-  height: 30vh;
+  height: 20vw;
   border-radius: 1vw;
 }
 .InitSection .body .containerBody .container2 .content-info {
@@ -210,9 +213,8 @@ html {
   display: flex;
   width: 100vw;
   height: 40vh;
-  font-size: 2vw;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 .InitSection .body .containerBody .container2 .content-info h1 {
   text-align: start;
@@ -325,6 +327,648 @@ html {
 }
 .InitSection .body .contenedorObjetivos .objetivo2 img {
   width: 40vw;
+}
+
+@media (max-width: 950px) {
+  .InitSection .body .containerBody {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 5vw;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 1vw;
+    font-family: "Concert One", cursive;
+    padding-top: 3vw;
+    justify-content: space-evenly;
+  }
+  .InitSection .body .containerBody .divider {
+    width: 60vw;
+    height: 2px;
+  }
+  .InitSection .body .containerBody .title {
+    display: flex;
+    font-family: "Lobster", cursive;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .InitSection .body .containerBody .title h1 {
+    font-size: 5vw;
+  }
+  .InitSection .body .containerBody .container {
+    margin-top: 30px;
+    width: 60vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .InitSection .body .containerBody .container img {
+    height: 20vw;
+    border-radius: 1vw;
+  }
+  .InitSection .body .containerBody .container .content-info {
+    padding-left: 30px;
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .InitSection .body .containerBody .container .content-info h1 {
+    text-align: end;
+    font-size: 2vw;
+  }
+  .InitSection .body .containerBody .container2 {
+    margin-top: 30px;
+    width: 60vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .InitSection .body .containerBody .container2 img {
+    height: 20vw;
+    border-radius: 1vw;
+  }
+  .InitSection .body .containerBody .container2 .content-info {
+    padding-right: 30px;
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .InitSection .body .containerBody .container2 .content-info h1 {
+    text-align: start;
+    font-size: 2vw;
+  }
+  .InitSection .body .TheGrid {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .InitSection .body .TheGrid .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    background-color: white;
+    width: 44.7vw;
+    height: 30vh;
+    font-family: "Concert One", cursive;
+  }
+  .InitSection .body .TheGrid .container h1 {
+    font-size: 2vw;
+  }
+  .InitSection .body .TheGrid .container .containerTitle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 43vw;
+    height: 5vh;
+  }
+  .InitSection .body .TheGrid .container .containerImage {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #02b8f0;
+    width: 43vw;
+    height: 20vh;
+  }
+  .InitSection .body .TheGrid .container .containerImage img {
+    width: 43vw;
+    height: 20vh;
+  }
+  .InitSection .body .TheGrid .container .containerImage #learning {
+    width: 40vw;
+    height: 7vh;
+    margin-bottom: 20px;
+  }
+  .InitSection .body .TheGrid .container #contentImageD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+  }
+  .InitSection .body .TheGrid .container #contentImageD #dreams {
+    width: 30vw;
+    height: 10vh;
+  }
+  .InitSection .body .contenedorObjetivos {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    width: 90vw;
+    height: 17vh;
+    border-radius: 1vw;
+    background-color: white;
+  }
+  .InitSection .body .contenedorObjetivos .containerText {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .InitSection .body .contenedorObjetivos .containerText h1 {
+    font-family: "Lobster", cursive;
+    font-size: 4vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 17vh;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo .containerText2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40vw;
+    background-color: whitesmoke;
+    margin-top: 2vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo .containerText2 h1 {
+    font-family: "Concert One", cursive;
+    font-size: 1.5vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    width: 50vw;
+    background-color: cornflowerblue;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo2 img {
+    width: 40vw;
+  }
+}
+@media (max-width: 750px) {
+  .InitSection .body .containerBody {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 1vw;
+    font-family: "Concert One", cursive;
+    padding-top: 3vw;
+    justify-content: space-evenly;
+  }
+  .InitSection .body .containerBody .divider {
+    width: 60vw;
+    height: 2px;
+    background-color: whitesmoke;
+  }
+  .InitSection .body .containerBody .title {
+    display: flex;
+    font-family: "Lobster", cursive;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .InitSection .body .containerBody .title h1 {
+    font-size: 5vw;
+  }
+  .InitSection .body .containerBody .container {
+    margin-top: 30px;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+  }
+  .InitSection .body .containerBody .container img {
+    height: 30vw;
+    border-radius: 1vw;
+  }
+  .InitSection .body .containerBody .container .content-info {
+    display: flex;
+    width: 45vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px;
+  }
+  .InitSection .body .containerBody .container .content-info h1 {
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  .InitSection .body .containerBody .container2 {
+    margin-top: 30px;
+    width: 60vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .InitSection .body .containerBody .container2 img {
+    height: 20vw;
+    border-radius: 1vw;
+  }
+  .InitSection .body .containerBody .container2 .content-info {
+    display: flex;
+    width: 45vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px;
+  }
+  .InitSection .body .containerBody .container2 .content-info h1 {
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  .InitSection .body .TheGrid {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .InitSection .body .contenedorObjetivos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 1vw;
+    align-items: center;
+    justify-content: center;
+    height: 18vh;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    width: 89vw;
+  }
+  .InitSection .body .contenedorObjetivos .containerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .InitSection .body .contenedorObjetivos .containerText h1 {
+    font-family: "Lobster", cursive;
+    font-size: 4vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    width: 89vw;
+    margin: 0px 0px 0px;
+    padding: 0px 0px 0px;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo .containerText2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    margin-top: 2vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo .containerText2 h1 {
+    font-family: "Concert One", cursive;
+    font-size: 2vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px;
+    width: 89vw;
+    background-color: cornflowerblue;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo2 img {
+    width: 30vw;
+  }
+}
+@media (max-width: 663px) {
+  .InitSection .body .containerBody {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 1vw;
+    font-family: "Concert One", cursive;
+    padding-top: 0vw;
+    justify-content: space-evenly;
+  }
+  .InitSection .body .containerBody .divider {
+    width: 60vw;
+    height: 2px;
+    background-color: whitesmoke;
+  }
+  .InitSection .body .containerBody .title {
+    display: flex;
+    font-family: "Lobster", cursive;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .InitSection .body .containerBody .title h1 {
+    font-size: 5vw;
+  }
+  .InitSection .body .containerBody .container {
+    margin-top: 0px;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .InitSection .body .containerBody .container img {
+    height: 40vw;
+    border-radius: 1vw;
+  }
+  .InitSection .body .containerBody .container .content-info {
+    display: flex;
+    width: 45vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px;
+  }
+  .InitSection .body .containerBody .container .content-info h1 {
+    text-align: center;
+    font-size: 3vw;
+  }
+  .InitSection .body .containerBody .container2 {
+    margin-top: 30px;
+    width: 60vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .InitSection .body .containerBody .container2 img {
+    height: 30vw;
+    border-radius: 1vw;
+  }
+  .InitSection .body .containerBody .container2 .content-info {
+    display: flex;
+    width: 45vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px;
+  }
+  .InitSection .body .containerBody .container2 .content-info h1 {
+    text-align: center;
+    font-size: 3vw;
+  }
+  .InitSection .body .TheGrid {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .InitSection .body .TheGrid .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 25vh;
+    font-family: "Concert One", cursive;
+  }
+  .InitSection .body .TheGrid .container h1 {
+    font-size: 2.5vw;
+  }
+  .InitSection .body .TheGrid .container .containerTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43vw;
+    height: 10vh;
+  }
+  .InitSection .body .TheGrid .container .containerImage {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #02b8f0;
+    width: 70vw;
+    height: 30vh;
+  }
+  .InitSection .body .TheGrid .container .containerImage img {
+    width: 70vw;
+    height: 20vh;
+  }
+  .InitSection .body .TheGrid .container .containerImage #learning {
+    width: 55vw;
+    height: 5vh;
+    margin-bottom: 20px;
+  }
+  .InitSection .body .TheGrid .container #contentImageD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+  }
+  .InitSection .body .TheGrid .container #contentImageD #dreams {
+    width: 40vw;
+    height: 10vh;
+  }
+  .InitSection .body .contenedorObjetivos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 1vw;
+    align-items: center;
+    justify-content: center;
+    height: 18vh;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    width: 89vw;
+  }
+  .InitSection .body .contenedorObjetivos .containerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .InitSection .body .contenedorObjetivos .containerText h1 {
+    font-family: "Lobster", cursive;
+    font-size: 4vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    width: 89vw;
+    margin: 0px 0px 0px;
+    padding: 0px 0px 0px;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo .containerText2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    margin-top: 2vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo .containerText2 h1 {
+    font-family: "Concert One", cursive;
+    font-size: 2vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px;
+    width: 89vw;
+    background-color: cornflowerblue;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo2 img {
+    width: 30vw;
+  }
+}
+@media (max-width: 500px) {
+  .InitSection .body .TheGrid {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .InitSection .body .TheGrid .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    background-color: white;
+    width: 100vw;
+    height: 30vh;
+    font-family: "Concert One", cursive;
+  }
+  .InitSection .body .TheGrid .container h1 {
+    font-size: 2.5vw;
+  }
+  .InitSection .body .TheGrid .container .containerTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43vw;
+    height: 5vh;
+  }
+  .InitSection .body .TheGrid .container .containerImage {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #02b8f0;
+    width: 70vw;
+    height: 20vh;
+  }
+  .InitSection .body .TheGrid .container .containerImage img {
+    width: 70vw;
+    height: 20vh;
+  }
+  .InitSection .body .TheGrid .container .containerImage #learning {
+    width: 50vw;
+    height: 6vh;
+    margin-bottom: 20px;
+  }
+  .InitSection .body .TheGrid .container #contentImageD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+  }
+  .InitSection .body .TheGrid .container #contentImageD #dreams {
+    width: 40vw;
+    height: 10vh;
+  }
+  .InitSection .body .contenedorObjetivos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 1vw;
+    align-items: center;
+    justify-content: center;
+    height: 23vh;
+    margin-bottom: 30px;
+    width: 89vw;
+  }
+  .InitSection .body .contenedorObjetivos .containerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .InitSection .body .contenedorObjetivos .containerText h1 {
+    font-family: "Lobster", cursive;
+    font-size: 4vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 89vw;
+    margin: 0px 0px 0px;
+    padding: 0px 0px 0px;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo .containerText2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    margin-top: 2vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo .containerText2 h1 {
+    font-family: "Concert One", cursive;
+    font-size: 2vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px;
+    width: 89vw;
+    background-color: cornflowerblue;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+  }
+  .InitSection .body .contenedorObjetivos .objetivo2 img {
+    width: 30vw;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
