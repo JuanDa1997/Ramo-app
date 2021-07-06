@@ -129,24 +129,42 @@ html {
 }
 
 .InitSection{
+    
     background-color: whitesmoke;
     .navbar{
+        .btn-group{
+            display: none;
+           
+        }
         position: fixed;
         width: 100vw;
+        height: 7vh;
+        .navbar-toggler{
+           
+            margin: 5px;
+            margin-left: 20px;
+            width: 3vw;
+            height: 3vw;
+        }
         .collapse{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 3vw;
+            font-size: 1vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
             .navbar-brand{
-                width: 4vw;
+               
+                
                 img{
-                    width: 4vw;
-                    height: 3vw;
+                    width: 3vw;
+                    height: 2vw;
                 }
             }
 
+           
+
             #list{
+                
                 margin-top: 42px;
             }
             
@@ -172,7 +190,7 @@ html {
         align-items: center;
         .containerHeader{
             width: 100vw;
-            height: 40vw;
+            height: 56vw;
             background-color: rgb(97, 133, 252);
         
             // background-image: url("../assets/img/ramo-banner.png");
@@ -210,7 +228,7 @@ html {
             .title{
                 display: flex;
                 font-family:'Lobster', cursive;
-                margin-bottom: 60px;
+                
                 h1{
                     font-size: 5vw;
                 }
@@ -284,8 +302,9 @@ html {
             width: 90vw;
             align-items: center;
             flex-wrap: wrap;
-            
-            margin-bottom: 20px;
+            height: 120vh;
+            margin-bottom: 60px;
+            margin-top: 60px;
             .container{
                 display: flex;
                 flex-direction: column;
@@ -349,12 +368,14 @@ html {
             width: 90vw;
             border-radius: 1vw;
             background-color: white;
+            margin-bottom: 30px;
             .containerText{
                 display: flex;
                 margin-top: 60px;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                
                 h1{
                     font-family:'Lobster', cursive;
                     font-size: 4vw;
@@ -367,16 +388,18 @@ html {
                 width: 50vw;
                 height: 63vh;
                 margin-bottom: 30px;
-                
+                justify-content: center;
 
                 .containerText2{
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
-                    margin-top: 60px;
+                    margin-top: 40px;
                     width: 40vw;
-                    display: flex;
-                 
+                    height: 5vh;
+                    background-color:whitesmoke;
+                    
+                    
                     
                     h1{
                         font-family: 'Concert One', cursive;
@@ -407,8 +430,76 @@ html {
    
 }
 
+@media (max-width: 992px){
+    .InitSection{
+        .navbar{
+        
+            position: fixed;
+            .btn-group{
+                display: block;
+                position: fixed;
+                margin-left: 2vw;
+                width: 4vw;
+                height: 6vh;
+                #list{
+                    
+                    margin-top: 38px;
+                }
+            }
+            position: fixed;
+            width: 100vw;
+            height: 7vh;
+            .navbar-toggler{
+                position: fixed;
+                margin: 5px;
+                margin-left: 20px;
+                width: 3vw;
+                height: 3vw;
+            }
+            .collapse{
+                position: fixed;
+                font-size: 1vw;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                
+                .navbar-brand{
+                    position: fixed;
+                    // width: 5vw;
+                    // height: 5vw;
+                    img{
+                        width: 3vw;
+                        height: 2vw;
+                    }
+                }
+    
+               
+    
+              
+                
+    
+            }
+            
+            .form-inline{
+                padding-right: 5vw;
+            }
+    
+            a{
+                margin-right: 2vw;
+            }
+    
+            
+            
+        }
+    
+    }
+}
+
 @media (max-width: 950px) {
     .InitSection{
+
+        
+
         
         .body{
 
@@ -419,7 +510,7 @@ html {
                 flex-direction: column;
                 align-items: center;
                 width: 90vw;
-                height: 60vh;
+                height: 170vh;
                 background-color: white;
                 border-radius: 1vw;
                 font-family: 'Concert One', cursive;
@@ -435,8 +526,7 @@ html {
                 .title{
                     display: flex;
                     font-family:'Lobster', cursive;
-                    margin-bottom: 10px;
-                    margin-top: 20px;
+                    
                     h1{
                         font-size: 5vw;
                     }
@@ -445,9 +535,9 @@ html {
                 }
 
                 .container{
-                    margin-top: 30px;
+                    margin-top: 0px;
                     width: 60vw;
-                    height: 12vh;
+                    height: 25vh;
                     display: flex;
                     flex-direction: row;
 
@@ -515,6 +605,7 @@ html {
                 align-items: center;
                 flex-wrap: wrap;
                 margin-bottom: 20px;
+                height: 100vh;
                 .container{
                     display: flex;
                     flex-direction: column;
@@ -525,7 +616,7 @@ html {
                     // justify-content: center;
                     background-color: rgb(255, 255, 255);
                     width: 44.7vw;
-                    height: 30vh;
+                    height: 50vh;
                     font-family: 'Concert One', cursive;
                     h1{
                         font-size: 2vw;
@@ -545,20 +636,18 @@ html {
                         justify-content: center;
                         background-color: rgb(2, 184, 240);
                         width: 43vw;
-                        height: 20vh;
+                        height: 35vh;
                         img{
                             width: 43vw;
-                            height: 20vh;
+                            height: 35vh;
                         }
 
                         #learning{
                             width: 40vw;
-                            height: 7vh;
-                            margin-bottom: 20px;
-                        }
-
-                        
+                            height: 15vh;
+                        }    
                     }
+
                     #contentImageD{
                         display: flex;
                         align-items: center;
@@ -566,18 +655,20 @@ html {
                         background-color: crimson;
                         #dreams{
                             width: 30vw;
-                            height: 10vh;
+                            height: 20vh;
+                            margin-bottom: 20px;
+
                         }
                     }
                 }
             }
 
             .contenedorObjetivos{
+                margin-top: 15px;
                 display: flex;
                 flex-direction: row;
-                margin-bottom: 60px;
                 width: 90vw;
-                height: 17vh;
+                height: 40vh;
                 border-radius: 1vw;
                 background-color: white;
                 .containerText{
@@ -597,7 +688,8 @@ html {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    height: 17vh;
+                    height: 40vh;
+                    
                     .containerText2{
                         display: flex;
                         justify-content: flex-start;
@@ -649,7 +741,7 @@ html {
                 flex-direction: column;
                 align-items: center;
                 width: 90vw;
-                height: 80vh;
+                height: 160vh;
                 background-color: white;
                 border-radius: 1vw;
                 font-family: 'Concert One', cursive;
@@ -677,13 +769,14 @@ html {
 
                 .container{
                     margin-top: 30px;
+                    
                     width: 60vw;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     // background-color: yellowgreen;
-                    height: 30vh;
+                    height: 50vh;
                     img{
 
                         height: 30vw;
@@ -691,10 +784,10 @@ html {
                         
                     }
                     .content-info{
-                        // background-color: rgb(206, 206, 17);
+                         
                         display: flex;
                         width: 45vw;
-                        height: 10vh;
+                        height: 30vh;
                         // font-size: 2vw;
                         justify-content: center;
                         align-items: center;
@@ -712,8 +805,8 @@ html {
                 .container2{
                     margin-top: 30px;
                     width: 60vw;
-                    // background-color: yellowgreen;
-                    height: 25vh;
+                   
+                    height: 40vh;
                     display: flex;
                     flex-direction: column-reverse;
                     align-items: center;
@@ -727,9 +820,10 @@ html {
                         
                     }
                     .content-info{
+                      
                         display: flex;
                         width: 45vw;
-                        height: 10vh;
+                        height: 20vh;
                         justify-content: center;
                         align-items: center;
                         padding: 0px 0px 0px;
@@ -743,17 +837,7 @@ html {
  
             }
 
-            .TheGrid{
-                display: flex;
-                justify-content: space-evenly;
-                width: 90vw;
-                align-items: center;
-                flex-wrap: wrap;
-                
-                margin-bottom: 20px;
-               
-            }
-
+          
             .contenedorObjetivos{
                 
                 display: flex;
@@ -762,10 +846,11 @@ html {
                 border-radius: 1vw;
                 align-items: center;
                 justify-content: center;
-                height: 18vh;
+                height: 60vh;
                 margin-bottom: 30px;
-                margin-top: 60px;
+                
                 width: 89vw;
+                // background-color: yellowgreen;
                 .containerText{
                     display: flex;
                     flex-direction: column;
@@ -782,7 +867,7 @@ html {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    height: 15vh;
+                    height: 51vh;
                     width: 89vw;
                     margin: 0px 0px 0px;
                     padding: 0px 0px 0px;
@@ -826,11 +911,10 @@ html {
 }
 
 
-@media (max-width: 663px) {
+@media (max-width: 664px) {
     .InitSection{
         .body{
-
-            
+ 
             .containerBody{
                 display: flex;
                 margin-top: 30px;
@@ -838,7 +922,7 @@ html {
                 flex-direction: column;
                 align-items: center;
                 width: 90vw;
-                height: 80vh;
+                height: 100vh;
                 background-color: white;
                 border-radius: 1vw;
                 font-family: 'Concert One', cursive;
@@ -857,7 +941,7 @@ html {
                     display: flex;
                     font-family:'Lobster', cursive;
                     margin-bottom: 0px;
-                    margin-top: 0px;
+                    margin-top: 60px;
                     h1{
                         font-size: 5vw;
                     }
@@ -876,14 +960,14 @@ html {
                 
                     img{
 
-                        height: 40vw;
+                        height: 30vw;
                         border-radius: 1vw;
                         
                     }
                     .content-info{
                         display: flex;
                         width: 45vw;
-                        height: 10vh;
+                        height: 14vh;
                         // font-size: 2vw;
                         justify-content: center;
                         align-items: center;
@@ -909,14 +993,14 @@ html {
 
                     img{
     
-                        height: 30vw;
+                        height:25vw;
                         border-radius: 1vw;
                         
                     }
                     .content-info{
                         display: flex;
                         width: 45vw;
-                        height: 10vh;
+                        height: 14vh;
                         justify-content: center;
                         align-items: center;
                         padding: 0px 0px 0px;
@@ -933,22 +1017,21 @@ html {
             
             .TheGrid{
                 display: flex;
-                justify-content: space-evenly;
-                width: 90vw;
+                justify-content: center;
+                width: 100vw;
+                height: 250vh;
                 align-items: center;
-                flex-wrap: wrap;
-                margin-bottom: 20px;
+                flex-direction: column;
                 .container{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    margin: 1px;
-                    // align-items: center;
-                    // justify-content: center;
-                    background-color: whitesmoke;
+                    margin: 2px 0px 0px;
                     width: 100vw;
-                    height: 25vh;
+                    height: 60vh;
+                    padding: 0px 0px 0px;
+                    
                     font-family: 'Concert One', cursive;
                     h1{
                         font-size: 2.5vw;
@@ -968,15 +1051,15 @@ html {
                         justify-content: center;
                         background-color: rgb(2, 184, 240);
                         width: 70vw;
-                        height: 30vh;
+                        height: 35vh;
                         img{
                             width: 70vw;
-                            height: 20vh;
+                            height: 35vh;
                         }
 
                         #learning{
                             width: 55vw;
-                            height: 5vh;
+                            height: 10vh;
                             margin-bottom: 20px;
                         }
 
@@ -989,85 +1072,85 @@ html {
                         background-color: crimson;
                         #dreams{
                             width: 40vw;
-                            height: 10vh;
+                            height: 20vh;
                         }
                     }
                 }
             }
 
-            .contenedorObjetivos{
+            // .contenedorObjetivos{
                 
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                border-radius: 1vw;
-                align-items: center;
-                justify-content: center;
-                height: 18vh;
-                margin-bottom: 30px;
-                margin-top: 60px;
-                width: 89vw;
-                .containerText{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    h1{
-                        font-family:'Lobster', cursive;
-                        font-size: 4vw;
-                    }
-                }
-                .objetivo{
+            //     display: flex;
+            //     flex-direction: row;
+            //     flex-wrap: wrap;
+            //     border-radius: 1vw;
+            //     align-items: center;
+            //     justify-content: center;
+            //     height: 18vh;
+            //     margin-bottom: 30px;
+            //     margin-top: 60px;
+            //     width: 89vw;
+            //     .containerText{
+            //         display: flex;
+            //         flex-direction: column;
+            //         align-items: center;
+            //         justify-content: center;
+            //         h1{
+            //             font-family:'Lobster', cursive;
+            //             font-size: 4vw;
+            //         }
+            //     }
+            //     .objetivo{
                     
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    height: 15vh;
-                    width: 89vw;
-                    margin: 0px 0px 0px;
-                    padding: 0px 0px 0px;
+            //         display: flex;
+            //         flex-direction: column;
+            //         align-items: center;
+            //         justify-content: center;
+            //         height: 15vh;
+            //         width: 89vw;
+            //         margin: 0px 0px 0px;
+            //         padding: 0px 0px 0px;
                     
-                    .containerText2{
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        width: 80vw;
-                        margin-top: 2vw;
-                        h1{
-                            font-family: 'Concert One', cursive;
-                            font-size: 2vw;
+            //         .containerText2{
+            //             display: flex;
+            //             justify-content: flex-start;
+            //             align-items: center;
+            //             width: 80vw;
+            //             margin-top: 2vw;
+            //             h1{
+            //                 font-family: 'Concert One', cursive;
+            //                 font-size: 2vw;
                             
-                        }
-                    }
+            //             }
+            //         }
     
-                }
+            //     }
     
-                .objetivo2{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0px 0px 0px;
-                    width: 89vw;
-                    background-color: cornflowerblue;
-                    border-top-right-radius: 0;
+            //     .objetivo2{
+            //         display: flex;
+            //         flex-direction: column;
+            //         justify-content: center;
+            //         align-items: center;
+            //         margin: 0px 0px 0px;
+            //         width: 89vw;
+            //         background-color: cornflowerblue;
+            //         border-top-right-radius: 0;
 
-                    border-bottom-left-radius: 1vw;
-                    border-bottom-right-radius: 1vw;
-                    img{
-                        width: 30vw;
+            //         border-bottom-left-radius: 1vw;
+            //         border-bottom-right-radius: 1vw;
+            //         img{
+            //             width: 30vw;
                         
-                    }
-                }
-            }
+            //         }
+            //     }
+            // }
            
         }
 
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .InitSection{
         .body{
 
@@ -1075,7 +1158,8 @@ html {
             .TheGrid{
                 display: flex;
                 justify-content: space-evenly;
-                width: 90vw;
+                width: 100vw;
+                height: 130vh;
                 align-items: center;
                 flex-wrap: wrap;
                 margin-bottom: 20px;
@@ -1085,12 +1169,13 @@ html {
                     align-items: center;
                     justify-content: center;
                     margin: 1px;
-                    // align-items: center;
-                    // justify-content: center;
-                    background-color: white;
-                    width: 100vw;
+                    align-items: center;
+                    justify-content: center;
+                    width: 90vw;
                     height: 30vh;
                     font-family: 'Concert One', cursive;
+                    background-color: white;
+
                     h1{
                         font-size: 2.5vw;
                     }
@@ -1108,10 +1193,10 @@ html {
                         align-items: flex-end;
                         justify-content: center;
                         background-color: rgb(2, 184, 240);
-                        width: 70vw;
+                        width: 60vw;
                         height: 20vh;
                         img{
-                            width: 70vw;
+                            width: 60vw;
                             height: 20vh;
                         }
 
@@ -1206,3 +1291,145 @@ html {
 
     }
 }
+
+// @media (max-width: 450px) {
+//     .InitSection{
+//         .body{
+
+        
+//             .TheGrid{
+//                 display: flex;
+//                 justify-content: space-evenly;
+//                 width: 100vw;
+//                 height: 130vh;
+//                 align-items: center;
+//                 flex-wrap: wrap;
+//                 margin-bottom: 20px;
+//                 .container{
+//                     display: flex;
+//                     flex-direction: column;
+//                     align-items: center;
+//                     justify-content: center;
+//                     margin: 1px;
+//                     align-items: center;
+//                     justify-content: center;
+//                     width: 90vw;
+//                     height: 30vh;
+//                     font-family: 'Concert One', cursive;
+//                     background-color: white;
+
+//                     h1{
+//                         font-size: 2.5vw;
+//                     }
+
+//                     .containerTitle{
+//                         display: flex;
+//                         align-items: center;
+//                         justify-content: center;
+//                         width: 43vw;
+//                         height: 5vh;
+//                     }
+                    
+//                     .containerImage{
+//                         display: flex;
+//                         align-items: flex-end;
+//                         justify-content: center;
+//                         background-color: rgb(2, 184, 240);
+//                         width: 60vw;
+//                         height: 20vh;
+//                         img{
+//                             width: 60vw;
+//                             height: 20vh;
+//                         }
+
+//                         #learning{
+//                             width: 50vw;
+//                             height: 6vh;
+//                             margin-bottom: 20px;
+//                         }
+
+                        
+//                     }
+//                     #contentImageD{
+//                         display: flex;
+//                         align-items: center;
+//                         justify-content: center;
+//                         background-color: crimson;
+//                         #dreams{
+//                             width: 40vw;
+//                             height: 10vh;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .contenedorObjetivos{
+                
+//                 display: flex;
+//                 flex-direction: row;
+//                 flex-wrap: wrap;
+//                 border-radius: 1vw;
+//                 align-items: center;
+//                 justify-content: center;
+//                 height: 23vh;
+//                 margin-bottom: 30px;
+//                 width: 89vw;
+//                 .containerText{
+//                     display: flex;
+//                     flex-direction: column;
+//                     align-items: center;
+//                     justify-content: center;
+//                     h1{
+//                         font-family:'Lobster', cursive;
+//                         font-size: 4vw;
+//                     }
+//                 }
+//                 .objetivo{
+                    
+//                     display: flex;
+//                     flex-direction: column;
+//                     align-items: center;
+//                     justify-content: center;
+//                     height: 20vh;
+//                     width: 89vw;
+//                     margin: 0px 0px 0px;
+//                     padding: 0px 0px 0px;
+                    
+//                     .containerText2{
+//                         display: flex;
+//                         justify-content: flex-start;
+//                         align-items: center;
+//                         width: 80vw;
+//                         margin-top: 2vw;
+//                         h1{
+//                             font-family: 'Concert One', cursive;
+//                             font-size: 2vw;
+                            
+//                         }
+//                     }
+    
+//                 }
+    
+//                 .objetivo2{
+//                     display: flex;
+//                     flex-direction: column;
+//                     justify-content: center;
+//                     align-items: center;
+//                     margin: 0px 0px 0px;
+//                     width: 89vw;
+//                     background-color: cornflowerblue;
+//                     border-top-right-radius: 0;
+
+//                     border-bottom-left-radius: 1vw;
+//                     border-bottom-right-radius: 1vw;
+//                     img{
+//                         width: 30vw;
+                        
+//                     }
+//                 }
+//             }
+           
+//         }
+
+//     }
+// }

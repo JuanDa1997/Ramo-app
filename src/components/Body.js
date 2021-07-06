@@ -18,8 +18,7 @@ const Body = () => {
                 <div className="container">
                     <img src={img1} alt="" />
                     <div className="content-info">
-                        <h1>Hemos creado una plataforma pensada para la familia Ramo. </h1>
-                          
+                        <h1>Hemos creado una plataforma pensada para la familia Ramo. </h1>         
                     </div>
                 </div>
                 <div className="divider"></div>
@@ -76,9 +75,7 @@ const Body = () => {
             </div>
             
             <div className="contenedorObjetivos">
-                {/* <div className="containerText">
-                    <h1>Nuestros objetivos</h1>
-                </div> */}
+                
                 <div className="objetivo" id="objetivos">
                     
                     <div className="containerText2">

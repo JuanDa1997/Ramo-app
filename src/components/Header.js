@@ -13,7 +13,7 @@ const Body = () => {
                 <img src={imgHeader2} alt="imgHeader" /> */}
 
                 
-                {/* <ReactPlayer 
+                <ReactPlayer 
                     url='https://youtu.be/x09mJefUqAA'
                     autoPlay={true}
                     volume={0}
@@ -23,7 +23,7 @@ const Body = () => {
                     playing
                     width="100%"
                     height="100%"
-                /> */}
+                />
             </div>
         </section> 
       

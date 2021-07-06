@@ -106,19 +106,26 @@ html {
 .InitSection .navbar {
   position: fixed;
   width: 100vw;
+  height: 7vh;
+}
+.InitSection .navbar .btn-group {
+  display: none;
+}
+.InitSection .navbar .navbar-toggler {
+  margin: 5px;
+  margin-left: 20px;
+  width: 3vw;
+  height: 3vw;
 }
 .InitSection .navbar .collapse {
+  font-size: 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 3vw;
-}
-.InitSection .navbar .collapse .navbar-brand {
-  width: 4vw;
 }
 .InitSection .navbar .collapse .navbar-brand img {
-  width: 4vw;
-  height: 3vw;
+  width: 3vw;
+  height: 2vw;
 }
 .InitSection .navbar .collapse #list {
   margin-top: 42px;
@@ -136,7 +143,7 @@ html {
 }
 .InitSection .Header .containerHeader {
   width: 100vw;
-  height: 40vw;
+  height: 56vw;
   background-color: #6185fc;
 }
 .InitSection .body {
@@ -168,7 +175,6 @@ html {
 .InitSection .body .containerBody .title {
   display: flex;
   font-family: "Lobster", cursive;
-  margin-bottom: 60px;
 }
 .InitSection .body .containerBody .title h1 {
   font-size: 5vw;
@@ -226,7 +232,9 @@ html {
   width: 90vw;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  height: 120vh;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 .InitSection .body .TheGrid .container {
   display: flex;
@@ -282,6 +290,7 @@ html {
   width: 90vw;
   border-radius: 1vw;
   background-color: white;
+  margin-bottom: 30px;
 }
 .InitSection .body .contenedorObjetivos .containerText {
   display: flex;
@@ -301,14 +310,16 @@ html {
   width: 50vw;
   height: 63vh;
   margin-bottom: 30px;
+  justify-content: center;
 }
 .InitSection .body .contenedorObjetivos .objetivo .containerText2 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 40px;
   width: 40vw;
-  display: flex;
+  height: 5vh;
+  background-color: whitesmoke;
 }
 .InitSection .body .contenedorObjetivos .objetivo .containerText2 h1 {
   font-family: "Concert One", cursive;
@@ -329,6 +340,51 @@ html {
   width: 40vw;
 }
 
+@media (max-width: 992px) {
+  .InitSection .navbar {
+    position: fixed;
+    position: fixed;
+    width: 100vw;
+    height: 7vh;
+  }
+  .InitSection .navbar .btn-group {
+    display: block;
+    position: fixed;
+    margin-left: 2vw;
+    width: 4vw;
+    height: 6vh;
+  }
+  .InitSection .navbar .btn-group #list {
+    margin-top: 38px;
+  }
+  .InitSection .navbar .navbar-toggler {
+    position: fixed;
+    margin: 5px;
+    margin-left: 20px;
+    width: 3vw;
+    height: 3vw;
+  }
+  .InitSection .navbar .collapse {
+    position: fixed;
+    font-size: 1vw;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .InitSection .navbar .collapse .navbar-brand {
+    position: fixed;
+  }
+  .InitSection .navbar .collapse .navbar-brand img {
+    width: 3vw;
+    height: 2vw;
+  }
+  .InitSection .navbar .form-inline {
+    padding-right: 5vw;
+  }
+  .InitSection .navbar a {
+    margin-right: 2vw;
+  }
+}
 @media (max-width: 950px) {
   .InitSection .body .containerBody {
     display: flex;
@@ -337,7 +393,7 @@ html {
     flex-direction: column;
     align-items: center;
     width: 90vw;
-    height: 60vh;
+    height: 170vh;
     background-color: white;
     border-radius: 1vw;
     font-family: "Concert One", cursive;
@@ -351,16 +407,14 @@ html {
   .InitSection .body .containerBody .title {
     display: flex;
     font-family: "Lobster", cursive;
-    margin-bottom: 10px;
-    margin-top: 20px;
   }
   .InitSection .body .containerBody .title h1 {
     font-size: 5vw;
   }
   .InitSection .body .containerBody .container {
-    margin-top: 30px;
+    margin-top: 0px;
     width: 60vw;
-    height: 12vh;
+    height: 25vh;
     display: flex;
     flex-direction: row;
   }
@@ -412,6 +466,7 @@ html {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    height: 100vh;
   }
   .InitSection .body .TheGrid .container {
     display: flex;
@@ -421,7 +476,7 @@ html {
     margin: 1px;
     background-color: white;
     width: 44.7vw;
-    height: 30vh;
+    height: 50vh;
     font-family: "Concert One", cursive;
   }
   .InitSection .body .TheGrid .container h1 {
@@ -440,16 +495,15 @@ html {
     justify-content: center;
     background-color: #02b8f0;
     width: 43vw;
-    height: 20vh;
+    height: 35vh;
   }
   .InitSection .body .TheGrid .container .containerImage img {
     width: 43vw;
-    height: 20vh;
+    height: 35vh;
   }
   .InitSection .body .TheGrid .container .containerImage #learning {
     width: 40vw;
-    height: 7vh;
-    margin-bottom: 20px;
+    height: 15vh;
   }
   .InitSection .body .TheGrid .container #contentImageD {
     display: flex;
@@ -459,14 +513,15 @@ html {
   }
   .InitSection .body .TheGrid .container #contentImageD #dreams {
     width: 30vw;
-    height: 10vh;
+    height: 20vh;
+    margin-bottom: 20px;
   }
   .InitSection .body .contenedorObjetivos {
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
-    margin-bottom: 60px;
     width: 90vw;
-    height: 17vh;
+    height: 40vh;
     border-radius: 1vw;
     background-color: white;
   }
@@ -486,7 +541,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 17vh;
+    height: 40vh;
   }
   .InitSection .body .contenedorObjetivos .objetivo .containerText2 {
     display: flex;
@@ -523,7 +578,7 @@ html {
     flex-direction: column;
     align-items: center;
     width: 90vw;
-    height: 80vh;
+    height: 160vh;
     background-color: white;
     border-radius: 1vw;
     font-family: "Concert One", cursive;
@@ -551,7 +606,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 30vh;
+    height: 50vh;
   }
   .InitSection .body .containerBody .container img {
     height: 30vw;
@@ -560,7 +615,7 @@ html {
   .InitSection .body .containerBody .container .content-info {
     display: flex;
     width: 45vw;
-    height: 10vh;
+    height: 30vh;
     justify-content: center;
     align-items: center;
     padding: 0px 0px 0px;
@@ -572,7 +627,7 @@ html {
   .InitSection .body .containerBody .container2 {
     margin-top: 30px;
     width: 60vw;
-    height: 25vh;
+    height: 40vh;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -586,7 +641,7 @@ html {
   .InitSection .body .containerBody .container2 .content-info {
     display: flex;
     width: 45vw;
-    height: 10vh;
+    height: 20vh;
     justify-content: center;
     align-items: center;
     padding: 0px 0px 0px;
@@ -595,14 +650,6 @@ html {
     text-align: center;
     font-size: 2.5vw;
   }
-  .InitSection .body .TheGrid {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90vw;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
   .InitSection .body .contenedorObjetivos {
     display: flex;
     flex-direction: row;
@@ -610,9 +657,8 @@ html {
     border-radius: 1vw;
     align-items: center;
     justify-content: center;
-    height: 18vh;
+    height: 60vh;
     margin-bottom: 30px;
-    margin-top: 60px;
     width: 89vw;
   }
   .InitSection .body .contenedorObjetivos .containerText {
@@ -630,7 +676,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 15vh;
+    height: 51vh;
     width: 89vw;
     margin: 0px 0px 0px;
     padding: 0px 0px 0px;
@@ -662,7 +708,7 @@ html {
     width: 30vw;
   }
 }
-@media (max-width: 663px) {
+@media (max-width: 664px) {
   .InitSection .body .containerBody {
     display: flex;
     margin-top: 30px;
@@ -670,7 +716,7 @@ html {
     flex-direction: column;
     align-items: center;
     width: 90vw;
-    height: 80vh;
+    height: 100vh;
     background-color: white;
     border-radius: 1vw;
     font-family: "Concert One", cursive;
@@ -686,7 +732,7 @@ html {
     display: flex;
     font-family: "Lobster", cursive;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 60px;
   }
   .InitSection .body .containerBody .title h1 {
     font-size: 5vw;
@@ -700,13 +746,13 @@ html {
     justify-content: center;
   }
   .InitSection .body .containerBody .container img {
-    height: 40vw;
+    height: 30vw;
     border-radius: 1vw;
   }
   .InitSection .body .containerBody .container .content-info {
     display: flex;
     width: 45vw;
-    height: 10vh;
+    height: 14vh;
     justify-content: center;
     align-items: center;
     padding: 0px 0px 0px;
@@ -725,13 +771,13 @@ html {
     margin-bottom: 30px;
   }
   .InitSection .body .containerBody .container2 img {
-    height: 30vw;
+    height: 25vw;
     border-radius: 1vw;
   }
   .InitSection .body .containerBody .container2 .content-info {
     display: flex;
     width: 45vw;
-    height: 10vh;
+    height: 14vh;
     justify-content: center;
     align-items: center;
     padding: 0px 0px 0px;
@@ -742,21 +788,21 @@ html {
   }
   .InitSection .body .TheGrid {
     display: flex;
-    justify-content: space-evenly;
-    width: 90vw;
+    justify-content: center;
+    width: 100vw;
+    height: 250vh;
     align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    flex-direction: column;
   }
   .InitSection .body .TheGrid .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1px;
-    background-color: whitesmoke;
+    margin: 2px 0px 0px;
     width: 100vw;
-    height: 25vh;
+    height: 60vh;
+    padding: 0px 0px 0px;
     font-family: "Concert One", cursive;
   }
   .InitSection .body .TheGrid .container h1 {
@@ -775,15 +821,15 @@ html {
     justify-content: center;
     background-color: #02b8f0;
     width: 70vw;
-    height: 30vh;
+    height: 35vh;
   }
   .InitSection .body .TheGrid .container .containerImage img {
     width: 70vw;
-    height: 20vh;
+    height: 35vh;
   }
   .InitSection .body .TheGrid .container .containerImage #learning {
     width: 55vw;
-    height: 5vh;
+    height: 10vh;
     margin-bottom: 20px;
   }
   .InitSection .body .TheGrid .container #contentImageD {
@@ -794,72 +840,15 @@ html {
   }
   .InitSection .body .TheGrid .container #contentImageD #dreams {
     width: 40vw;
-    height: 10vh;
-  }
-  .InitSection .body .contenedorObjetivos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-radius: 1vw;
-    align-items: center;
-    justify-content: center;
-    height: 18vh;
-    margin-bottom: 30px;
-    margin-top: 60px;
-    width: 89vw;
-  }
-  .InitSection .body .contenedorObjetivos .containerText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .InitSection .body .contenedorObjetivos .containerText h1 {
-    font-family: "Lobster", cursive;
-    font-size: 4vw;
-  }
-  .InitSection .body .contenedorObjetivos .objetivo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 15vh;
-    width: 89vw;
-    margin: 0px 0px 0px;
-    padding: 0px 0px 0px;
-  }
-  .InitSection .body .contenedorObjetivos .objetivo .containerText2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 80vw;
-    margin-top: 2vw;
-  }
-  .InitSection .body .contenedorObjetivos .objetivo .containerText2 h1 {
-    font-family: "Concert One", cursive;
-    font-size: 2vw;
-  }
-  .InitSection .body .contenedorObjetivos .objetivo2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 0px 0px;
-    width: 89vw;
-    background-color: cornflowerblue;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 1vw;
-    border-bottom-right-radius: 1vw;
-  }
-  .InitSection .body .contenedorObjetivos .objetivo2 img {
-    width: 30vw;
+    height: 20vh;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .InitSection .body .TheGrid {
     display: flex;
     justify-content: space-evenly;
-    width: 90vw;
+    width: 100vw;
+    height: 130vh;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
@@ -870,10 +859,12 @@ html {
     align-items: center;
     justify-content: center;
     margin: 1px;
-    background-color: white;
-    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
     height: 30vh;
     font-family: "Concert One", cursive;
+    background-color: white;
   }
   .InitSection .body .TheGrid .container h1 {
     font-size: 2.5vw;
@@ -890,11 +881,11 @@ html {
     align-items: flex-end;
     justify-content: center;
     background-color: #02b8f0;
-    width: 70vw;
+    width: 60vw;
     height: 20vh;
   }
   .InitSection .body .TheGrid .container .containerImage img {
-    width: 70vw;
+    width: 60vw;
     height: 20vh;
   }
   .InitSection .body .TheGrid .container .containerImage #learning {
