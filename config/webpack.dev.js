@@ -16,7 +16,7 @@ const devConfig = {
         new HotModuleReplacementPlugin(),
         new ReactRefreshWebpackPlugin()
     ],
-    devtool:"eval-source-map",
+    devtool:"inline-source-map",
     module: {
         rules: [
             {
